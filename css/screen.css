@@ -115,13 +115,20 @@ body {
   background-image: url("/img/Assassins_Creed_1600-X-980_1.png");
   background-attachment: fixed;
 }
-.one .slice-dice {
-  font-size: 40px;
-  float: none;
-  margin-top: 10px;
-  margin-left: 10px;
+.one .text-title, .one .radio {
+  font-size: 75%;
+  color: Black;
+  text-shadow: gray 3px 4px;
+  padding-bottom: 10px;
+}
+.one .serious {
+  color: red;
   display: inline-block;
   position: relative;
+  float: none;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 25%;
 }
 
 .two {
