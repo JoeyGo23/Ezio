@@ -65,7 +65,7 @@ body{
 }
 
 // Everything else
-.one, .two{
+.one, .two, .three, .four {
 	@extend %section;
 }
 
@@ -103,5 +103,41 @@ body{
 		position: relative;
 		
 	}
+
 }	
 
+//SECTION 3
+.three {
+  background-image: url('/img/ashraf_ismail_orulnek_egy_egyiptomi_assassins_creednek_1.jpg');
+  background-attachment: fixed;
+  // background-attachment: fixed;
+
+	//text on imgs
+	.slice-dice {
+		font-size: 40px;
+		float: none;
+		margin-top: 10px;
+		margin-left: 10px;
+		display: inline-block;
+		position: relative;
+		
+	}
+}	
+
+//SECTION 4
+.four {
+  background-image: url('/img/ezio_civilian_thugs.jpg');
+  background-attachment: fixed;
+  // background-attachment: fixed;
+
+	//text on imgs
+	.slice-dice {
+		font-size: 40px;
+		float: none;
+		margin-top: 10px;
+		margin-left: 10px;
+		display: inline-block;
+		position: relative;
+		
+	}
+}	

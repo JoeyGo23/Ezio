@@ -55,7 +55,7 @@ table {
   background-position: 0 0;
 }
 
-.one, .two {
+.one, .two, .three, .four {
   position: relative;
   background-size: cover;
 }
@@ -129,6 +129,32 @@ body {
   background-attachment: fixed;
 }
 .two .slice-dice {
+  font-size: 40px;
+  float: none;
+  margin-top: 10px;
+  margin-left: 10px;
+  display: inline-block;
+  position: relative;
+}
+
+.three {
+  background-image: url("/img/ashraf_ismail_orulnek_egy_egyiptomi_assassins_creednek_1.jpg");
+  background-attachment: fixed;
+}
+.three .slice-dice {
+  font-size: 40px;
+  float: none;
+  margin-top: 10px;
+  margin-left: 10px;
+  display: inline-block;
+  position: relative;
+}
+
+.four {
+  background-image: url("/img/ezio_civilian_thugs.jpg");
+  background-attachment: fixed;
+}
+.four .slice-dice {
   font-size: 40px;
   float: none;
   margin-top: 10px;
