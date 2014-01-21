@@ -1,0 +1,107 @@
+@import "library";
+@import "reset";
+
+// Global templates
+
+%group:after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+%container {
+    margin: 0 auto;
+    max-width: 960px;
+}
+%section {
+  position: relative;
+  background-size: cover;
+}
+
+// Global tags
+$dark-grey: #696969;
+$med-red: #c00002;
+
+
+body {
+    background: $dark-grey;
+}
+html, body {
+    /* any div up to fullscreen-cont must have this
+    in this case html and body */
+    height:100%;
+    min-height:100%;
+}
+
+a {
+    color: $med-red;
+}
+
+.fullscreen-cont {
+    display:block;position:relative;
+    min-width:100%;
+    min-height:100%;
+}
+.fullscreen-img {
+    display:block;position:absolute;z-index:1;
+    min-width:100%;
+    min-height:100%;
+    background:transparent url('') center center no-repeat;
+    background-size:cover;
+}
+.content {
+    display:block;position:relative;z-index:2;
+}
+/* custom setting */
+body{
+    margin:0;
+    color:#ffffff;
+    font-size:40px;
+    text-align:center;
+    font-family:sans-serif;
+}
+.fullscreen-cont {
+    margin-bottom:2px;
+}
+
+// Everything else
+.one, .two{
+	@extend %section;
+}
+
+//SECTION 1
+.one {
+  background-image: url('/img/Assassins_Creed_1600-X-980_1.png');
+  background-attachment: fixed;
+  // background-attachment: fixed;
+
+	//text on imgs
+	.slice-dice {
+		font-size: 40px;
+		float: none;
+		margin-top: 10px;
+		margin-left: 10px;
+		display: inline-block;
+		position: relative;
+		
+	}
+}	
+
+//SECTION 2
+.two {
+  background-image: url('/img/assassins-creed-la-hermandad-arte-004.jpg');
+  background-attachment: fixed;
+  // background-attachment: fixed;
+
+	//text on imgs
+	.slice-dice {
+		font-size: 40px;
+		float: none;
+		margin-top: 10px;
+		margin-left: 10px;
+		display: inline-block;
+		position: relative;
+		
+	}
+}	
+

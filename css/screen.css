@@ -1,0 +1,138 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.one, .two {
+  position: relative;
+  background-size: cover;
+}
+
+body {
+  background: dimgrey;
+}
+
+html, body {
+  /* any div up to fullscreen-cont must have this
+  in this case html and body */
+  height: 100%;
+  min-height: 100%;
+}
+
+a {
+  color: #c00002;
+}
+
+.fullscreen-cont {
+  display: block;
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.fullscreen-img {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  min-width: 100%;
+  min-height: 100%;
+  background: transparent url("") center center no-repeat;
+  background-size: cover;
+}
+
+.content {
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+/* custom setting */
+body {
+  margin: 0;
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.fullscreen-cont {
+  margin-bottom: 2px;
+}
+
+.one {
+  background-image: url("/img/Assassins_Creed_1600-X-980_1.png");
+  background-attachment: fixed;
+}
+.one .slice-dice {
+  font-size: 40px;
+  float: none;
+  margin-top: 10px;
+  margin-left: 10px;
+  display: inline-block;
+  position: relative;
+}
+
+.two {
+  background-image: url("/img/assassins-creed-la-hermandad-arte-004.jpg");
+  background-attachment: fixed;
+}
+.two .slice-dice {
+  font-size: 40px;
+  float: none;
+  margin-top: 10px;
+  margin-left: 10px;
+  display: inline-block;
+  position: relative;
+}

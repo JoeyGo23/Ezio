@@ -1,0 +1,133 @@
+//Handheld
+@media screen and (max-width: 400px){
+
+  .one {
+
+  background-image: url('/images/bobby_one.jpg');
+
+    // fa fa-arrow-circle-o-down fa-3x  
+    .arrow {
+    @extend %arrow;
+    // @include arrow-up;
+      left: 50%;
+      font-size: 200%;
+      text-shadow: 5px 5px gray;
+    }
+
+
+    .info {
+      display: inline;
+      background: rgba(0, 0, 0, .2);
+      overflow: auto;
+        &:after {
+          @extend %group:after;
+        }
+    }
+
+    p {
+      width: 50%;
+      padding-top: 20px;
+      padding-left: 20px;
+      // padding-bottom:  0px;
+      font-size: 20px;
+      line-height: 1.5;
+      background: rgba(0, 0, 0, .2);
+      position: absolute;
+      left: 40%;
+      top: 25%
+
+      a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        position: relative;
+      }
+
+      .goc {
+        display: inline;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// Tablet
+@media screen and (max-width: 800px){
+
+  .one {
+    background-image: url('/images/bobby_one.jpg');
+
+    .arrow {
+    @extend %arrow;
+    }
+
+
+    .info {
+      display: inline;
+      background: rgba(0, 0, 0, .2);
+      overflow: auto;
+        &:after {
+          @extend %group:after;
+        }
+    }
+
+    p {
+      width: 35%;
+      padding-top: 20px;
+      padding-left: 20px;
+      font-size: 20px;
+      line-height: 1.5;
+
+      a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        position: relative;
+      }
+
+      .goc {
+        display: inline;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+//default layout
+.one {
+    background-image: url('/images/bobby_one.jpg');
+
+    .arrow {
+    @extend %arrow;
+    }
+
+
+    .info {
+      display: inline;
+      background: rgba(0, 0, 0, .2);
+      overflow: auto;
+        &:after {
+          @extend %group:after;
+        }
+    }
+
+    p {
+      width: 35%;
+      padding-top: 20px;
+      padding-left: 20px;
+      font-size: 20px;
+      line-height: 1.5;
+
+      a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        position: relative;
+      }
+
+      .goc {
+        display: inline;
+        text-decoration: underline;
+      }
+    }
+  }
